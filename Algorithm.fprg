@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="b.emelyanov"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-27 01:01:36 "/>
+        <attribute name="created" value="Yi5lbWVseWFub3Y7UFNJMjsyMDIzLTA2LTI3OyIxMjoxNTozOCAiOzI2MDM="/>
+        <attribute name="edited" value="Yi5lbWVseWFub3Y7UFNJMjsyMDIzLTA2LTI3OyIwMTowMTozNiAiOzE7MjcwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#1047;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077;:&#13;&#10;&#1053;&#1072;&#1087;&#1080;&#1089;&#1072;&#1090;&#1100; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1091;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1080;&#1079; &#1080;&#1084;&#1077;&#1102;&#1097;&#1077;&#1075;&#1086;&#1089;&#1103; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1072; &#1089;&#1090;&#1088;&#1086;&#1082; &#1092;&#1086;&#1088;&#1084;&#1080;&#1088;&#1091;&#1077;&#1090; &#1085;&#1086;&#1074;&#1099;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1080;&#1079; &#1089;&#1090;&#1088;&#1086;&#1082;, &#1076;&#1083;&#1080;&#1085;&#1072; &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1093; &#1084;&#1077;&#1085;&#1100;&#1096;&#1077;, &#1083;&#1080;&#1073;&#1086; &#1088;&#1072;&#1074;&#1085;&#1072; 3 &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1072;&#1084;. &#13;&#10;&#1055;&#1077;&#1088;&#1074;&#1086;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1084;&#1086;&#1078;&#1085;&#1086; &#1074;&#1074;&#1077;&#1089;&#1090;&#1080; &#1089; &#1082;&#1083;&#1072;&#1074;&#1080;&#1072;&#1090;&#1091;&#1088;&#1099;, &#1083;&#1080;&#1073;&#1086; &#1079;&#1072;&#1076;&#1072;&#1090;&#1100; &#1085;&#1072; &#1089;&#1090;&#1072;&#1088;&#1090;&#1077; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1103; &#1072;&#1083;&#1075;&#1086;&#1088;&#1080;&#1090;&#1084;&#1072;. &#13;&#10;"/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1088;&#1072;&#1079;&#1084;&#1077;&#1088; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1072;&quot;" newline="True"/>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <input variable="size"/>
+            <declare name="arr" type="String" array="True" size="size"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="size - 1" direction="inc" step="1">
+                <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &quot; &amp; i + 1 &amp;  &quot; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1072;&quot;" newline="True"/>
+                <input variable="arr[i]"/>
+            </for>
+            <declare name="newSize" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="size - 1" direction="inc" step="1">
+                <if expression="arr[i].Length &lt;= 3">
+                    <then>
+                        <assign variable="newSize" expression="newSize + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <declare name="shortArr" type="String" array="True" size="newSize"/>
+            <for variable="i" start="0" end="size" direction="inc" step="1">
+                <declare name="j" type="Integer" array="False" size=""/>
+                <assign variable="j" expression="0"/>
+                <if expression="arr[i].Length &lt;= 3">
+                    <then>
+                        <assign variable="shortArr[j]" expression="arr[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

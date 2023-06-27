@@ -38,7 +38,7 @@ string[] ShortLenTo3(string[] arr)
     int new_size = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] <= 3)
+        if (arr[i].Length <= 3)
         {
             new_size ++;
         }
@@ -47,7 +47,7 @@ string[] ShortLenTo3(string[] arr)
     for (int i = 0; i < arr.Length; i++)
     {
         int j = 0;
-        if (arr[i] <= 3)
+        if (arr[i].Length <= 3)
         {
             shortArr[j] = arr[i];
         }
