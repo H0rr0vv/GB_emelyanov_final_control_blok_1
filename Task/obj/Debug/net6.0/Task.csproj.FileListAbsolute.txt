@@ -1,0 +1,15 @@
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\bin\Debug\net6.0\Task.exe
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\bin\Debug\net6.0\Task.deps.json
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\bin\Debug\net6.0\Task.runtimeconfig.json
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\bin\Debug\net6.0\Task.dll
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\bin\Debug\net6.0\Task.pdb
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.csproj.AssemblyReference.cache
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.GeneratedMSBuildEditorConfig.editorconfig
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.AssemblyInfoInputs.cache
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.AssemblyInfo.cs
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.csproj.CoreCompileInputs.cache
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.dll
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\refint\Task.dll
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.pdb
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\Task.genruntimeconfig.cache
+G:\GB_emelyanov_final_control_blok_1\GB_emelyanov_final_control_blok_1\Task\obj\Debug\net6.0\ref\Task.dll

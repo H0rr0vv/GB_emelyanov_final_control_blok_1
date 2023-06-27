@@ -12,11 +12,11 @@
 string[] CreateArray(int size)
 {
     string[] arr = new string[size];
-    
+
     for (int i = 0; i < size; i++)
     {
         Console.WriteLine($"Введите {i + 1} элемент массива");
-        arr[i] = Convert.ToInt32(Console.ReadLine());
+        arr[i] = Convert.ToString(Console.ReadLine());
     }
     return arr;
 }
@@ -29,7 +29,7 @@ void PrintArray(string[] arr)
         Console.Write(arr[i]);
         if (i < arr.Length - 1) Console.Write(", ");
     }
-    
+
     Console.Write("]");
 }
 
@@ -40,19 +40,33 @@ string[] ShortLenTo3(string[] arr)
     {
         if (arr[i].Length <= 3)
         {
-            new_size ++;
+            new_size++;
         }
     }
-    string[] shortArr = new string[new_size];
-    for (int i = 0; i < arr.Length; i++)
+
+    if (new_size > 0)
     {
+        string[] shortArr = new string[new_size];
         int j = 0;
-        if (arr[i].Length <= 3)
+        for (int i = 0; i < arr.Length; i++)
         {
-            shortArr[j] = arr[i];
+
+            if (arr[i].Length <= 3)
+            {
+                shortArr[j] = arr[i];
+                j++;
+            }
         }
+        return shortArr;
     }
-	return reverseArr;
+
+    else
+    {
+        string[] shortArr = new string[1];
+        shortArr[0] = "";
+        return shortArr;
+    }
+
 }
 
 
@@ -61,7 +75,7 @@ string[] ShortLenTo3(string[] arr)
 Console.WriteLine($"Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
 string[] array = CreateArray(size);
-string[] shortArray = ShortLenTo3(array)
+string[] shortArray = ShortLenTo3(array);
 
 
 PrintArray(array);
